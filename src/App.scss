@@ -1,0 +1,83 @@
+$item-padding: 10px;
+$small: 320px;
+$medium: 768px;
+
+
+.App-header {
+	min-height: 100vh;
+	font-size: calc(10px + 2vmin);
+}
+.App-link {
+	color: #61dafb;
+}
+.Header-root {
+	flex-grow: 1;
+	& > header {
+		background-color: #dbdce0 !important;
+	}
+}
+.Header-name {
+	margin-right: "15px";
+}
+.List-container {
+	display: flex;
+	justify-content: center;
+	padding: 0 25px;
+  @media screen and (max-width: $small) {
+    padding: 0 calc(10px + 5px);
+  }
+}
+.list-group {
+	border-radius: 6px;
+	padding: $item-padding;
+	box-shadow: 0px 1px 12px #c7c7c7cc;
+	margin-bottom: $item-padding;
+	border: none !important;
+	& > div {
+		margin: 5px 0;
+	}
+}
+.list-group {
+	* {
+		width: 100%;
+	}
+}
+.list-item {
+	text-decoration: none;
+	color: #585757;
+}
+.ta-c {
+	text-align: center;
+}
+.Deatils-header {
+	text-align: center;
+}
+.item-container {
+	padding: 25px;
+}
+.item-wrapper {
+	border: none;
+	box-shadow: 0px 1px 12px #c7c7c7cc;
+	border-radius: 6px;
+	padding: $item-padding;
+	display: flex;
+	flex-direction: row;
+	& > div {
+		padding: 10px;
+	}
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+  }
+}
+.image-container {
+	display: flex;
+	align-items: center;
+	& > img {
+		width: 100%;
+		border-radius: 6px;
+	}
+}
+.back-button-wrapper {
+	padding: $item-padding 25px 0 0;
+	text-align: right;
+}
